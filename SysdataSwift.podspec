@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.version                   = '0.1.0'
   s.platform                  = :ios
   s.ios.deployment_target     = '9.0'
+  s.swift_version             = '4.2'
   s.summary                   = 'Sysdata architecture and utilities library'
   s.homepage                  =  'http://www.sysdata.it'
   s.social_media_url          =  'https://www.facebook.com/sysdata.it/'
