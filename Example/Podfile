@@ -1,0 +1,8 @@
+use_frameworks!
+platform :ios, '10.0'
+
+target 'SysdataSwift_Example' do
+    
+  pod 'SysdataSwift', :path => '../'
+  
+end

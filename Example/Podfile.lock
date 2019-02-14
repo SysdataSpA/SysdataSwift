@@ -1,0 +1,24 @@
+PODS:
+  - SysdataSwift (0.1.0):
+    - SysdataSwift/Core (= 0.1.0)
+    - SysdataSwift/MVPC (= 0.1.0)
+    - SysdataSwift/Promise (= 0.1.0)
+  - SysdataSwift/Core (0.1.0)
+  - SysdataSwift/MVPC (0.1.0):
+    - SysdataSwift/Core
+  - SysdataSwift/Promise (0.1.0):
+    - SysdataSwift/Core
+
+DEPENDENCIES:
+  - SysdataSwift (from `../`)
+
+EXTERNAL SOURCES:
+  SysdataSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SysdataSwift: 24036b1d40f44158dad665f271d8dec0d507e82a
+
+PODFILE CHECKSUM: 16ad87f50df83c159095b03abe169cf68360c27e
+
+COCOAPODS: 1.5.3

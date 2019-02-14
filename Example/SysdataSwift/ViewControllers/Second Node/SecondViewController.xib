@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="SDInterfaceCore_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="TQ1-1Z-VKA" id="sSR-RR-Al8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQ1-1Z-VKA">
+                    <rect key="frame" x="166.5" y="70" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ud-Bc-obl">
+                    <rect key="frame" x="133.5" y="141" width="108" height="30"/>
+                    <state key="normal" title="Update Context"/>
+                    <connections>
+                        <action selector="updateContext:" destination="-1" eventType="touchUpInside" id="rrA-m5-ve9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.79309619490000005" green="1" blue="0.2493865347" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Ud-Bc-obl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="EVw-zC-h30"/>
+                <constraint firstItem="TQ1-1Z-VKA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F67-Pd-bEG"/>
+                <constraint firstItem="TQ1-1Z-VKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="NrE-4h-lmf"/>
+                <constraint firstItem="7Ud-Bc-obl" firstAttribute="top" secondItem="TQ1-1Z-VKA" secondAttribute="bottom" constant="50" id="YMR-UY-l4b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

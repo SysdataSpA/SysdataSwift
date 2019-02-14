@@ -1,0 +1,6 @@
+framework module SysdataSwift {
+  umbrella header "SysdataSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
