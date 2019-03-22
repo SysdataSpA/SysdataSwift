@@ -141,10 +141,7 @@ open class BaseCoordinator<E: CoordinatorEnums> {
     open func actionManagement<PRM>(action actionKey: E.ACT, context: Context<PRM>) {
         assertionFailure("Implement method performAction in your specific coordinator")
     }
-}
-
-// MARK: Navigation
- extension BaseCoordinator {
+    
     open func navigate<PRM>(withVc vc: UIViewController, context: Context<PRM>, navigation: NavigationType = .push(animated: true)) {
         switch navigation {
         case .push(let animated):
@@ -158,6 +155,7 @@ open class BaseCoordinator<E: CoordinatorEnums> {
         }
     }
     
+    // MARK: Navigation
     open func navigate<PRM>(toNode key: E.NOD, context: Context<PRM>, navigation: NavigationType = .push(animated: true)) {
         guard let vc = buildNode(key: key, context: context) else {
             assertionFailure("Coordinator can't navigate to node with given key: \(key)")
